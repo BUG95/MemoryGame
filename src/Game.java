@@ -51,7 +51,7 @@ class Game extends JFrame implements ActionListener {
         t1 = new Timer(500, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if(level == 4){
+                if(level > MAX_LEVEL){
                     endGame();
                 } else {
                     playGame();
